@@ -1,0 +1,79 @@
+/* FileComplaint.css */
+
+.file-complaint-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .file-complaint-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .file-complaint-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .file-complaint-form input[type="text"],
+  .file-complaint-form textarea,
+  .file-complaint-form input[type="file"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .file-complaint-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .file-complaint-form button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .file-complaint-form button:hover {
+    background-color: #005fa3;
+  }
+  
+  .file-complaint-form label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    display: inline-block;
+  }
+  
+  .status-message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  
+  .status-message.success {
+    color: green;
+  }
+  
+  .status-message.error {
+    color: red;
+  }
+  
+  @media (max-width: 600px) {
+    .file-complaint-container {
+      padding: 10px;
+    }
+  
+    .file-complaint-form button {
+      font-size: 14px;
+    }
+  }
+  

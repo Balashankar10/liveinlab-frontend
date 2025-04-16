@@ -1,0 +1,50 @@
+/* Admin Dashboard Container */
+.admin-dashboard {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Dashboard Heading */
+  .admin-dashboard h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  /* Dashboard Subtext */
+  .admin-dashboard p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* View Complaints Button */
+  .admin-dashboard button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .admin-dashboard button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 600px) {
+    .admin-dashboard {
+      padding: 30px 15px;
+    }
+  
+    .admin-dashboard button {
+      width: 100%;
+      font-size: 1.1rem;
+    }
+  }
+  

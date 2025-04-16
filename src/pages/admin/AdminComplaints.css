@@ -1,0 +1,76 @@
+/* Base padding for the container */
+.admin-complaints-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Title */
+  .admin-complaints-container h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  /* Complaint card */
+  .complaint-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-left: 6px solid #3498db;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  /* Complaint content */
+  .complaint-card p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Strong labels */
+  .complaint-card strong {
+    color: #555;
+  }
+  
+  /* Dropdown styling */
+  .complaint-card select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+  
+  /* Image */
+  .complaint-card img {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+  
+  /* Location link */
+  .complaint-card a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .complaint-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .complaint-card {
+      padding: 10px;
+    }
+  
+    .complaint-card select {
+      margin-top: 5px;
+      width: 100%;
+    }
+  }
+  
