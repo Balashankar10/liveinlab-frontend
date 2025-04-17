@@ -87,3 +87,42 @@
     }
   }
   
+
+
+  .status-labels {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .status-label {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .status-label.completed {
+    background-color: green;
+    color: white;
+  }
+  
+  .status-label.pending {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .status-label.rejected {
+    background-color: red;
+    color: white;
+  }
+  
+  .status-label.working { /* Blue background for "working" status */
+    background-color: #007bff; /* Blue color */
+    color: white;
+  }
+  
+  /* Apply color to the value of the status alone */
+  .status-value {
+    color: #007bff; /* Blue color for "working" value */
+  }
+  
