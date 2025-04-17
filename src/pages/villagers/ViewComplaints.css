@@ -136,3 +136,65 @@
   }
   
   
+
+
+  .status-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .status-label {
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .status-label.completed {
+    background-color: green;
+    color: white;
+  }
+  
+  .status-label.pending {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .status-label.rejected {
+    background-color: red;
+    color: white;
+  }
+  
+  .status-label.working { /* New blue status label */
+    background-color: #007bff; /* Blue color */
+    color: white;
+  }
+  
+  .status-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  
+  .status-badge.completed {
+    background-color: green;
+    color: white;
+  }
+  
+  .status-badge.pending {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .status-badge.rejected {
+    background-color: red;
+    color: white;
+  }
+  
+  .complaint-status.working {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
