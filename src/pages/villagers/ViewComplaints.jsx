@@ -93,6 +93,7 @@ const ViewComplaints = () => {
     if (lower === 'pending') return 'status-badge pending';
     if (lower === 'completed') return 'status-badge completed';
     if (lower === 'rejected') return 'status-badge rejected';
+    if (lower === 'working') return 'status-badge working'; // New working status
     return 'status-badge';
   };
 
@@ -103,7 +104,9 @@ const ViewComplaints = () => {
       case 'completed':
         return 'நிறைவு பெற்றது';
       case 'rejected':
-        return 'நிராகரிக்கப்பட்டது'; // ✅ Updated
+        return 'நிராகரிக்கப்பட்டது';
+      case 'working':
+        return 'பணியில்'; // New working status in Tamil
       default:
         return status;
     }
@@ -131,6 +134,11 @@ const ViewComplaints = () => {
         <div className="status-label rejected">
           <SpeakOnTouch text="சிவப்பு: நிராகரிக்கப்பட்டது">
             சிவப்பு: நிராகரிக்கப்பட்டது
+          </SpeakOnTouch>
+        </div>
+        <div className="status-label working"> {/* New blue status label */}
+          <SpeakOnTouch text="நீலம்: பணியில்">
+            நீலம்: பணியில் {/* Blue: Working */}
           </SpeakOnTouch>
         </div>
       </div>
