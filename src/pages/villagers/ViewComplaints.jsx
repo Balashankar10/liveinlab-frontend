@@ -103,7 +103,7 @@ const ViewComplaints = () => {
       case 'completed':
         return 'நிறைவு பெற்றது';
       case 'rejected':
-        return 'தள்ளுபடி செய்யப்பட்டது';
+        return 'நிராகரிக்கப்பட்டது'; // ✅ Updated
       default:
         return status;
     }
@@ -187,7 +187,7 @@ const ViewComplaints = () => {
 
             {c.imageUrl && (
               <img
-                src={c.imageUrl}  // Use the imageUrl directly
+                src={c.imageUrl}
                 alt="புகார்"
               />
             )}
