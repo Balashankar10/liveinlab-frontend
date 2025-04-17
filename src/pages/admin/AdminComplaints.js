@@ -51,6 +51,7 @@ const AdminComplaints = () => {
                 <option value="Pending">நிலுவையில்</option>
                 <option value="Working">பணியில்</option>
                 <option value="Completed">முடிக்கப்பட்டது</option>
+                <option value="Rejected">நிராகரிக்கப்பட்டது</option> {/* ✅ Added */}
               </select>
             </p>
             {comp.imageUrl && (
