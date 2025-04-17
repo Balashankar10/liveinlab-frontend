@@ -1,200 +1,125 @@
 /* ViewComplaints.css */
 
 .container {
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Status labels at top */
+.status-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.status-label {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: default;
+}
+
+.status-label.completed {
+  background-color: green;
+}
+
+.status-label.pending {
+  background-color: yellow;
+  color: black;
+}
+
+.status-label.rejected {
+  background-color: red;
+}
+
+.status-label.working { /* Blue status label */
+  background-color: #007bff; /* Blue color */
+  color: white;
+}
+
+/* Complaint Card */
+.complaint-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.complaint-card p {
+  margin: 5px 0;
+}
+
+.complaint-card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+/* Status Badge */
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.status-badge.pending {
+  background-color: yellow;
+  color: black;
+}
+
+.status-badge.completed {
+  background-color: green;
+  color: white;
+}
+
+.status-badge.rejected {
+  background-color: red;
+  color: white;
+}
+
+.status-badge.working { /* Blue badge for working status */
+  background-color: #007bff;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
   }
-  
+
   h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    text-align: center;
+    font-size: 1.5rem;
   }
-  
-  /* Status labels at top */
-  .status-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 20px;
-    gap: 10px;
-  }
-  
+
   .status-label {
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    color: white;
-    cursor: default;
-  }
-  
-  .status-label.completed {
-    background-color: green;
-  }
-  
-  .status-label.pending {
-    background-color: yellow;
-    color: black;
-  }
-  
-  .status-label.rejected {
-    background-color: red;
-  }
-  
-  /* Complaint Card */
-  .complaint-card {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-  }
-  
-  .complaint-card p {
-    margin: 5px 0;
-  }
-  
-  .complaint-card img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-top: 10px;
-    border-radius: 8px;
-  }
-  
-  /* Status Badge */
-  .status-badge {
-    display: inline-block;
-    padding: 4px 10px;
-    border-radius: 5px;
-    font-weight: bold;
+    padding: 8px 12px;
     font-size: 0.9rem;
   }
-  
-  .status-badge.pending {
-    background-color: yellow;
-    color: black;
-  }
-  
-  .status-badge.completed {
-    background-color: green;
-    color: white;
-  }
-  
-  .status-badge.rejected {
-    background-color: red;
-    color: white;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    .container {
-      padding: 10px;
-    }
-  
-    h2 {
-      font-size: 1.5rem;
-    }
-  
-    .status-label {
-      padding: 8px 12px;
-      font-size: 0.9rem;
-    }
-  
-    .complaint-card {
-      padding: 10px;
-    }
-  
-    .complaint-card img {
-      max-width: 100%;
-    }
-  }
-  
-  
-  .complaint-status {
-    display: inline-block;
-    padding: 4px 8px;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .complaint-status.pending {
-    background-color: yellow;
-    color: black;
-  }
-  
-  .complaint-status.completed {
-    background-color: green;
-    color: white;
-  }
-  
-  .complaint-status.rejected {
-    background-color: red;
-    color: white;
-  }
-  
-  
 
+  .complaint-card {
+    padding: 10px;
+  }
 
-  .status-container {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
+  .complaint-card img {
+    max-width: 100%;
   }
-  
-  .status-label {
-    padding: 5px 15px;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  
-  .status-label.completed {
-    background-color: green;
-    color: white;
-  }
-  
-  .status-label.pending {
-    background-color: yellow;
-    color: black;
-  }
-  
-  .status-label.rejected {
-    background-color: red;
-    color: white;
-  }
-  
-  .status-label.working { /* New blue status label */
-    background-color: #007bff; /* Blue color */
-    color: white;
-  }
-  
-  .status-badge {
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 12px;
-  }
-  
-  .status-badge.completed {
-    background-color: green;
-    color: white;
-  }
-  
-  .status-badge.pending {
-    background-color: yellow;
-    color: black;
-  }
-  
-  .status-badge.rejected {
-    background-color: red;
-    color: white;
-  }
-  
-  .complaint-status.working {
-    background-color: #007bff; /* Blue background */
-    color: white; /* White text */
-    padding: 5px;
-    border-radius: 5px;
-  }
-  
+}
