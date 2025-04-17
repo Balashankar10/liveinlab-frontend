@@ -67,6 +67,8 @@ const MyComplaints = () => {
         return 'complaint-status completed';
       case 'rejected':
         return 'complaint-status rejected';
+      case 'working': // New case for working status
+        return 'complaint-status working'; // Add class for working
       default:
         return 'complaint-status';
     }
@@ -80,6 +82,8 @@ const MyComplaints = () => {
         return 'முடிக்கப்பட்டது';
       case 'rejected':
         return 'நிராகரிக்கப்பட்டது';
+      case 'working': // New case for working status
+        return 'செயல்பாட்டில்'; // Tamil for "working"
       default:
         return status;
     }
@@ -93,6 +97,8 @@ const MyComplaints = () => {
         return 'நிலை முடிக்கப்பட்டது';
       case 'rejected':
         return 'நிலை நிராகரிக்கப்பட்டது';
+      case 'working': // New case for working status
+        return <span className="status-value">நிலை செயல்பாட்டில்</span>; // Color applied to value
       default:
         return status;
     }
@@ -111,6 +117,9 @@ const MyComplaints = () => {
         </SpeakOnTouch>
         <SpeakOnTouch text="சிவப்பு என்பது நிர்வாகி புகாரை நிராகரித்துவிட்டதாக பொருள்">
           <span className="status-label rejected">நிராகரிக்கப்பட்டது</span>
+        </SpeakOnTouch>
+        <SpeakOnTouch text="நீலம் என்பது புகார் செயல் நிலை உள்ளது என்பதைக் குறிக்கும்">
+          <span className="status-label working">செயல்பாட்டில்</span>
         </SpeakOnTouch>
       </div>
 
